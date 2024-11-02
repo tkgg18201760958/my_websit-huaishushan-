@@ -6,4 +6,5 @@ for (let i = 0; i < 10; i++) {
 }
 function log_print_hello(){
     console.log("Hello World");
+    return "打印成功"
 }
