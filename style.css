@@ -1,6 +1,9 @@
 #div1 {
-    background-color: brown;
+    background-color: #a52a2a;
 }
 #一级标签（欢迎到我的网站）{
     color: rgb(169, 96, 96);
+}
+#二级标签 {
+    background-image: url(.\img\IMG_20240522_170638.jpg);
 }
