@@ -1,18 +1,18 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>My Website</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UA-Compatible"content="IE=edge">
+        <meta name="viewport"content="width=device-width,initi">
+        <title>JavaScriptDoM</title>
     </head>
     <body>
-        <div>
-            <h1 id="一级标签（欢迎到我的网站）" onclick="mouseover()">Welcome to My Website</h1>
-            <h2 id="二级标签">hello world</h2>
-            <p>This is a paragraph of text.</p>
-            <input type="text" id="myInput">
-            <button id="button_hello">hello</button>
-        </div> 
-        <div id="click_time">点击次数</div>
+        <div id="box1">这是一个ID选择器标签</div>
+        <div class="box2">这是一个类选择器标签</div>
+        <div>普通的div标签</div>
+        <script>
+            var element_id=document.getElementById('box1');
+            console.log(element_id);
+        </script>
     </body>
-    </head>
 </html>
