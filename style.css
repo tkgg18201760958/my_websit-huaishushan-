@@ -7,3 +7,6 @@ body {
 #二级标签 {
     background-image: url(.\img\IMG_20240522_170638.jpg);
 }
+#myinput {
+    color: steelblue;
+}
