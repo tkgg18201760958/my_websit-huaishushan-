@@ -1,18 +1,26 @@
-<html>
-    <head>
-        <title>My Website</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <div>
-            <h1 id="一级标签（欢迎到我的网站）" onclick="mouseover()">Welcome to My Website</h1>
-            <h2 id="二级标签">hello world</h2>
-            <p>This is a paragraph of text.</p>
-            <input type="text" id="myInput">
-            <button id="button_hello">hello</button>
-        </div> 
-        <div id="click_time">点击次数</div>
-    </body>
-    </head>
+<!DOCTYPE html>
+<head>
+    <title>点击次数</title>
+</head>
+<body>
+    <div id="click_time">0</div>
+    <button id="click_button">点击我</button>
+
+    <script>
+        let mouseclick = 0;
+        console.log("open");
+
+        window.onload = function() {
+            var id = document.getElementById("click_time");
+            console.log(id);
+            id.innerHTML = mouseclick;
+
+            var button = document.getElementById("click_button");
+            button.addEventListener("click", function() {
+                mouseclick++;
+                id.innerHTML = mouseclick;
+            });
+        }
+    </script>
+</body>
 </html>
