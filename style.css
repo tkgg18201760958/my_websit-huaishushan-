@@ -1,5 +1,11 @@
+div {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
 #一级标签（欢迎到我的网站）{
-    color: rgba(86, 193, 53, 0.735);
-    font-size: 20px;
+    color: rgb(169, 96, 96);
+    font-size: 200px;
     font-weight: bold;
 }
