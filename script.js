@@ -1,9 +1,5 @@
-console.log("open");
-var id = document.getElementById("click_time");
-console.log(id);
-let mouseclick = 0;
-function mouseover(){
-    console.log(mouseclick)
-    mouseclick++;
+window.onload=function(){
+    let element_id=document.getElementById('box1');
+    console.log(element_id);
+    element_id.innerHTML = "Hello World"
 }
-console.log("over")
