@@ -1,7 +1,9 @@
-console.log("Hello World");
-alert("Hello World");
-get_id("二级标签")
-function get_id(id){
-    let id = document.getElementById(id);
-    console.log(id);
+console.log("open");
+var id = document.getElementById("click_time");
+console.log(id);
+let mouseclick = 0;
+function mouseover(){
+    console.log(mouseclick)
+    mouseclick++;
 }
+console.log("over")
