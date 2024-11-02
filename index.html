@@ -1,26 +1,11 @@
 <!DOCTYPE html>
 <head>
     <title>点击次数</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="click_time">0</div>
     <button id="click_button">点击我</button>
-
-    <script>
-        let mouseclick = 0;
-        console.log("open");
-
-        window.onload = function() {
-            var id = document.getElementById("click_time");
-            console.log(id);
-            id.innerHTML = mouseclick;
-
-            var button = document.getElementById("click_button");
-            button.addEventListener("click", function() {
-                mouseclick++;
-                id.innerHTML = mouseclick;
-            });
-        }
-    </script>
 </body>
 </html>
