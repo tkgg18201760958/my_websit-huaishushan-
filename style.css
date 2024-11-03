@@ -1,3 +1,13 @@
 body {
     background: radial-gradient(circle, #ff7e5f, #feb47b);
 }
+#click_time {
+    font-size: 100px;
+    color: #fff;
+    margin-top: 20px;
+}
+#click_button {
+    font-size: 40px;
+    color: #f17070;
+    font-weight: bold;
+}
