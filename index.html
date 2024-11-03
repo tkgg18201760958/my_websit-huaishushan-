@@ -1,18 +1,29 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>My Website</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <div>
-            <h1 id="一级标签（欢迎到我的网站）">Welcome to My Website</h1>
-            <h2 id="二级标签">hello world</h2>
-            <p>This is a paragraph of text.</p>
-            <input type="text" id="myInput">
-            <button id="button_hello">hello</button>
-        </div> 
-        <div id="click_time">点击次数</div>
-    </body>
-    </head>
+<head>
+  <title>Vue.js Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ message }}</h1>
+    <p v-if="isVisible">Welcome to Vue.js!</p>
+    <button @click="toggleMessage">Toggle Message</button>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello, Vue!',
+        isVisible: true
+      },
+      methods: {
+        toggleMessage() {
+          this.isVisible = !this.isVisible;
+        }
+      }
+    });
+  </script>
+</body>
 </html>
